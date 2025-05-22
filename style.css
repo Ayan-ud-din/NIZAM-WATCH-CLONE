@@ -1,0 +1,253 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ .white{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100vw;
+ height: 5vh;
+ background-color: rgb(255, 255, 255);
+ font-family: sans-serif;
+ font-size: 13px;
+ font-weight: 400;
+ line-height: 16.9px;
+ color: rgb(18, 18,18);
+ word-spacing: 2.5px;
+ border-bottom: 0.1px solid black;
+ }
+ .logo-2{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    background-color:rgb(255, 255, 255) ;
+  
+
+    align-items: center;
+   /* gap: 40px; */
+   justify-content: center;
+ }
+ .inside{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 400px;
+ }
+  nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+    height: 6vh;
+    border-bottom:  0.1px solid black;
+    gap: 28px;
+ }
+ nav li{
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+    list-style-type: none;
+    color: rgb(18, 18, 18);
+ }
+ header{
+   position: sticky;
+   top: 0;
+   
+ }
+ nav:hover{
+   text-decoration: underline black;
+   cursor: pointer;
+
+ }
+
+ .heading1 p{
+    width: 100vw;
+    height: 15vh;
+    background-color: rgb(255, 255, 255);
+    font-family: Assistant, sans-serif;
+font-size: 40px;
+font-weight: 100;
+line-height: 52px;
+color: rgb(18, 18, 18);
+/* padding-top: 30px;
+margin-left: 200px; */
+display: flex;
+justify-content: center;
+align-items: center;
+
+ }
+ .grids{
+   display: grid;
+   width:100vw;
+   padding-left: 175px;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+  
+   row-gap: 40px;
+ }
+
+
+ .gr1:hover {
+   transform:scale(1.5px) ;
+ }
+ .btn{
+   width: 100vw;
+   height: 15vh;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+ }
+ .btn button{
+   font-family: Assistant, sans-serif;
+font-size: 15px;
+font-weight: 100;
+line-height: 18px;
+color: rgb(255, 255, 255);
+background-color: black;
+padding:15px 30px ;
+ }
+ .banner2{
+   background-image: url(./asset/banner.png);
+   background-repeat: no-repeat;
+   background-position: left;
+   width: 100vw;
+   height: 100vh;
+ }
+ .watch-section{
+   width: 100vw;
+   background-color: rgb(255, 255, 255);
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr  1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   margin-top: 23px;
+   padding-left: 234px;
+   padding-right: 234px;
+ }
+ .container{
+   width: 230px; 
+   background-color: rgb(255, 255, 255);
+ }
+ .container p{
+   font-family: Assistant, sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 13.9px;
+color: rgb(57, 56, 56);
+ }
+ .cut-price p{
+   text-decoration: line-through;
+   color: #3d3d3d;
+ }
+ .real-price p{
+   color: rgb(0, 0, 0);
+   font-size: medium;
+   font-weight: 100;
+ }
+ .actors{
+   width: 100vw;
+   height: 80vh;
+   background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  
+}
+footer{
+  display: flex;
+  width: 100vw;
+  height: 25vh;
+  background-color: black;
+    justify-content: center;
+  align-items: center;
+}
+.black p{ 
+  color: azure;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+.black p:hover{
+  
+  color: goldenrod;
+}
+
+
+
+@media (max-width:768px) {
+ .grids{
+  grid-template-columns: 1fr;
+
+ justify-content: center;
+ align-items: center;
+
+ }
+ .grids{
+    padding-left: 33px;
+  }
+ .heading1{
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .banner2{
+  background-position: left;
+  width: 100vw;
+  
+ }
+ .watch-section{
+  margin: 0%;
+  padding: 0%;
+  grid-template-columns: 1fr;
+ }
+ header{
+  margin: 0%;
+  padding: 0%;
+ }
+ .actors{
+  margin: 0%;
+  padding: 0%;
+  
+flex-wrap: wrap;
+  
+ }
+
+@media (max-width: 768px) {
+  .footer-container {
+    /* flex-direction: column; */
+    gap: 40px;
+    
+  }
+  .grids{
+    padding-left: 33px;
+  }
+}
+@media (max-width: 800px)   {
+  .grids{
+    padding-left: 33px;
+  }
+  
+}
+@media  (max-width: 1000px) {
+  .grids{
+    padding: 0%;
+    margin: 0%;
+   
+  }
+  .watch-section{
+     padding: 0%;
+    margin: 0%;
+  }
+  /* .actors{
+    padding-left:230px ;
+  } */
+}
+}
